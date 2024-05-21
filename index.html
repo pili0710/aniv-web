@@ -3,28 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YEYEYEYEYEY</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>p</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function showCongratsMessage() {
+            var name = document.getElementById("nameInput").value;
+            var message = "Congrats " + name + ", you're officially married to Muhammad Farras yang ganteng dan sangat kul. Thanks.";
+            document.getElementById("congratsMessage").innerText = message;
+        }
+    </script>
 </head>
 <body>
     <div class="container">
-        <div class="message">Ni Pencet</div>
-        
-        <div class="photos hidden">
-            <img src="images/foto1.jpeg" alt="Foto 1">
-            <img src="images/foto2.jpeg" alt="Foto 2">
-            <img src="images/foto3.jpeg" alt="Foto 3">
-            <img src="images/foto4.jpeg" alt="Foto 4">
-            <img src="images/foto5.jpeg" alt="Foto 5">
-        </div>
-        
-        <div class="text hidden">
-            "Cieee aniv wkwkwkwk, happy aniv sayangggg WKWKWKW, we've been through a lot, please stay with me for now and forever ya WKWKWK"
-        </div>
-        <button class="continue hidden">Continue</button>
-        <div class="final-message hidden">"Love u sayanggg bauk eek bauk iler bauk jigong mwehehehe"</div>
+        <label for="nameInput">Put your name Here:</label>
+        <input type="text" id="nameInput" placeholder="Enter your name">
+        <button onclick="showCongratsMessage()">Submit</button>
+        <p id="congratsMessage"></p>
     </div>
-
-    <script src="scripts.js"></script>
 </body>
 </html>
